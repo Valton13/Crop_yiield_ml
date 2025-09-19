@@ -1,0 +1,106 @@
+District,Date,Avg_Temp_C,Max_Temp_C,Min_Temp_C,Rainfall_mm,Humidity,Condition,Wind_kph
+Amritsar,2025-09-06,26.6,29.2,25.2,9.95,86,Moderate rain,11.2
+Amritsar,2025-09-07,26.2,29.8,24.2,5.62,83,Moderate rain,12.2
+Amritsar,2025-09-08,27.4,31.3,24.1,2.56,77,Patchy rain nearby,8.6
+Amritsar,2025-09-09,28.5,32.9,24.9,2.19,76,Patchy rain nearby,9.7
+Amritsar,2025-09-10,29.2,34.0,25.0,0.0,70,Sunny,13.3
+Amritsar,2025-09-11,27.8,32.9,25.5,0.03,70,Partly Cloudy ,10.1
+Amritsar,2025-09-12,29.5,34.2,26.0,0.0,71,Partly Cloudy ,9.7
+Bathinda,2025-09-06,27.1,30.8,24.2,4.91,79,Patchy rain nearby,11.5
+Bathinda,2025-09-07,27.3,30.6,24.6,0.23,77,Patchy rain nearby,14.8
+Bathinda,2025-09-08,27.4,30.2,24.8,0.3,79,Patchy rain nearby,16.2
+Bathinda,2025-09-09,26.7,29.1,24.7,22.99,84,Heavy rain,15.5
+Bathinda,2025-09-10,26.7,29.8,24.6,15.27,83,Moderate rain,13.3
+Bathinda,2025-09-11,25.9,29.2,23.5,3.08,84,Patchy rain nearby,13.7
+Bathinda,2025-09-12,26.7,29.9,24.1,2.18,82,Patchy rain nearby,15.5
+Ludhiana,2025-09-06,26.9,31.9,24.5,16.76,87,Moderate rain,14.8
+Ludhiana,2025-09-07,27.4,31.2,24.0,23.63,83,Heavy rain,9.7
+Ludhiana,2025-09-08,27.8,31.6,24.3,15.07,83,Moderate rain,11.5
+Ludhiana,2025-09-09,27.3,31.2,24.3,4.38,83,Patchy rain nearby,13.7
+Ludhiana,2025-09-10,27.6,31.7,23.9,0.66,80,Patchy rain nearby,16.2
+Ludhiana,2025-09-11,26.6,31.0,24.9,0.37,80,Patchy rain nearby,12.2
+Ludhiana,2025-09-12,26.8,30.1,25.0,1.96,82,Patchy rain nearby,7.6
+Jalandhar,2025-09-06,27.1,31.1,25.0,23.59,85,Heavy rain,10.4
+Jalandhar,2025-09-07,26.8,30.6,24.0,16.04,82,Moderate rain,10.1
+Jalandhar,2025-09-08,27.9,31.2,24.9,4.07,80,Patchy rain nearby,8.3
+Jalandhar,2025-09-09,27.9,31.7,25.1,7.14,82,Moderate rain,11.5
+Jalandhar,2025-09-10,28.3,32.8,24.4,0.68,77,Patchy rain nearby,14.8
+Jalandhar,2025-09-11,26.9,29.9,25.7,0.06,79,Partly Cloudy ,9.4
+Jalandhar,2025-09-12,28.0,32.2,25.5,5.08,78,Moderate rain,8.3
+Patiala,2025-09-06,27.8,32.0,24.7,12.38,84,Moderate rain,16.6
+Patiala,2025-09-07,28.0,32.1,24.8,9.71,82,Moderate rain,14.4
+Patiala,2025-09-08,27.8,31.8,24.4,28.25,83,Heavy rain,11.5
+Patiala,2025-09-09,27.3,31.0,23.9,0.33,82,Patchy rain nearby,16.6
+Patiala,2025-09-10,27.5,31.4,24.2,0.38,80,Patchy rain nearby,20.5
+Patiala,2025-09-11,26.8,31.3,25.1,0.09,80,Partly Cloudy ,16.9
+Patiala,2025-09-12,27.7,31.5,25.0,1.45,76,Patchy rain nearby,10.8
+Mansa,2025-09-06,27.7,32.0,25.2,11.81,84,Moderate rain,16.2
+Mansa,2025-09-07,28.2,32.8,25.1,10.1,81,Moderate rain,15.1
+Mansa,2025-09-08,28.6,32.5,25.1,3.69,73,Patchy rain nearby,14.0
+Mansa,2025-09-09,28.1,32.3,24.5,0.0,69,Sunny,13.0
+Mansa,2025-09-10,28.7,33.2,25.2,0.0,68,Partly Cloudy ,16.9
+Mansa,2025-09-11,28.3,33.7,25.5,0.0,63,Sunny,15.8
+Mansa,2025-09-12,29.1,33.6,25.3,0.54,66,Patchy rain nearby,13.3
+Fazilka,2025-09-06,28.7,33.3,26.4,3.54,76,Patchy rain nearby,19.4
+Fazilka,2025-09-07,28.6,33.4,25.4,9.1,78,Moderate rain,14.8
+Fazilka,2025-09-08,29.4,33.9,25.3,8.18,70,Moderate rain,13.7
+Fazilka,2025-09-09,29.5,33.7,25.8,0.0,62,Sunny,11.2
+Fazilka,2025-09-10,30.4,35.5,26.5,0.0,58,Sunny,19.1
+Fazilka,2025-09-11,29.9,35.7,27.3,0.0,55,Sunny,19.1
+Fazilka,2025-09-12,31.6,35.9,27.9,0.0,53,Thundery outbreaks in nearby,15.1
+Hoshiarpur,2025-09-06,26.9,31.0,24.6,17.08,81,Moderate rain,14.8
+Hoshiarpur,2025-09-07,26.7,30.2,23.9,7.98,79,Moderate rain,7.6
+Hoshiarpur,2025-09-08,27.7,31.0,24.7,4.85,77,Patchy rain nearby,8.3
+Hoshiarpur,2025-09-09,27.4,31.5,24.5,9.24,81,Moderate rain,14.0
+Hoshiarpur,2025-09-10,27.4,31.9,24.4,2.93,79,Patchy rain nearby,16.9
+Hoshiarpur,2025-09-11,26.0,29.7,24.3,2.05,83,Patchy rain nearby,8.3
+Hoshiarpur,2025-09-12,27.1,31.4,24.4,1.32,78,Patchy rain nearby,7.2
+Sangrur,2025-09-06,27.3,31.4,24.9,20.64,86,Heavy rain,16.6
+Sangrur,2025-09-07,27.7,31.8,24.7,13.38,84,Moderate rain,14.4
+Sangrur,2025-09-08,27.9,31.7,24.5,8.78,80,Moderate rain,14.0
+Sangrur,2025-09-09,27.5,31.1,24.1,0.0,77,Sunny,13.7
+Sangrur,2025-09-10,27.9,31.9,24.3,0.17,76,Patchy rain nearby,16.6
+Sangrur,2025-09-11,27.3,32.3,24.5,0.01,72,Sunny,13.7
+Sangrur,2025-09-12,28.0,31.6,24.8,1.81,74,Patchy rain nearby,13.0
+Moga,2025-09-06,27.0,31.5,25.0,13.03,87,Moderate rain,14.4
+Moga,2025-09-07,27.5,31.8,23.8,20.16,84,Heavy rain,11.2
+Moga,2025-09-08,28.0,32.0,24.5,16.4,82,Moderate rain,10.8
+Moga,2025-09-09,27.8,31.7,24.1,0.45,77,Patchy rain nearby,11.5
+Moga,2025-09-10,28.4,32.5,24.6,0.01,73,Partly Cloudy ,15.5
+Moga,2025-09-11,27.5,32.6,24.7,0.0,69,Sunny,10.4
+Moga,2025-09-12,28.8,33.3,25.7,0.1,70,Thundery outbreaks in nearby,11.2
+Firozpur,2025-09-06,27.4,30.9,25.2,10.41,83,Moderate rain,15.5
+Firozpur,2025-09-07,27.5,32.1,23.6,22.28,83,Heavy rain,13.0
+Firozpur,2025-09-08,28.4,32.3,24.8,11.18,79,Moderate rain,9.7
+Firozpur,2025-09-09,28.7,32.8,24.6,0.09,71,Sunny,10.1
+Firozpur,2025-09-10,29.3,34.2,25.3,0.0,66,Sunny,15.1
+Firozpur,2025-09-11,28.4,34.2,25.4,0.0,62,Sunny,13.3
+Firozpur,2025-09-12,30.3,35.1,26.6,0.12,61,Patchy rain nearby,10.8
+Gurdaspur,2025-09-06,26.1,28.7,24.5,5.63,86,Moderate rain,13.3
+Gurdaspur,2025-09-07,25.8,28.8,24.4,0.31,82,Patchy rain nearby,9.7
+Gurdaspur,2025-09-08,27.2,31.0,23.9,0.21,78,Patchy rain nearby,6.8
+Gurdaspur,2025-09-09,27.9,32.3,24.6,6.37,78,Moderate rain,10.8
+Gurdaspur,2025-09-10,28.1,32.2,25.0,2.86,79,Patchy rain nearby,14.0
+Gurdaspur,2025-09-11,26.7,30.7,24.9,2.03,84,Patchy rain nearby,8.6
+Gurdaspur,2025-09-12,27.6,32.1,24.7,2.55,82,Patchy rain nearby,10.4
+Rupnagar,2025-09-06,25.2,30.1,22.9,16.63,84,Moderate rain,9.4
+Rupnagar,2025-09-07,25.3,29.4,22.2,7.11,81,Moderate rain,8.3
+Rupnagar,2025-09-08,25.8,29.9,22.8,7.18,81,Moderate rain,7.2
+Rupnagar,2025-09-09,25.2,29.6,22.4,11.53,84,Moderate rain,9.0
+Rupnagar,2025-09-10,25.0,29.2,22.3,6.45,84,Moderate rain,13.0
+Rupnagar,2025-09-11,24.5,29.2,22.3,2.43,84,Patchy rain nearby,8.6
+Rupnagar,2025-09-12,25.2,29.8,22.8,2.15,79,Patchy rain nearby,8.6
+Kapurthala,2025-09-06,27.2,31.1,25.1,21.39,85,Heavy rain,8.6
+Kapurthala,2025-09-07,26.6,30.3,24.1,11.71,83,Moderate rain,11.5
+Kapurthala,2025-09-08,27.7,30.7,24.8,3.94,80,Patchy rain nearby,8.3
+Kapurthala,2025-09-09,28.1,32.1,25.1,5.39,80,Moderate rain,10.4
+Kapurthala,2025-09-10,28.5,33.2,24.6,0.79,75,Patchy rain nearby,14.4
+Kapurthala,2025-09-11,27.1,30.1,25.8,0.0,77,Partly Cloudy ,8.6
+Kapurthala,2025-09-12,28.5,32.9,25.8,3.07,76,Patchy rain nearby,8.3
+Barnala,2025-09-06,27.1,31.1,24.8,12.19,87,Moderate rain,15.5
+Barnala,2025-09-07,27.8,31.9,24.8,11.49,83,Moderate rain,11.9
+Barnala,2025-09-08,28.0,31.9,24.5,12.75,80,Moderate rain,14.0
+Barnala,2025-09-09,27.6,31.5,24.1,0.02,76,Sunny,13.0
+Barnala,2025-09-10,28.1,32.2,24.5,0.01,74,Partly Cloudy ,16.2
+Barnala,2025-09-11,27.5,32.6,24.6,0.04,70,Sunny,12.2
+Barnala,2025-09-12,27.8,30.7,24.8,0.49,74,Patchy rain nearby,10.1

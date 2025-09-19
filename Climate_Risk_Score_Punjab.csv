@@ -1,0 +1,23 @@
+District,Rainfall_Risk,GW_Risk,Temp_Risk,Crop_Risk,Climate_Risk_Score,Recommendation
+Amritsar,3,5,5,8,5.7,Continue with rotation
+Bathinda,5,8,8,8,7.7,Switch to Bajra/Moong
+Firozpur,4,6,7,8,6.2,Continue with rotation
+Faridkot,5,7,7,8,7.6,Switch to Bajra/Moong
+Ludhiana,3,7,6,8,6.0,Continue with rotation
+Moga,3,8,6,8,6.2,Continue with rotation
+Sangrur,4,9,7,8,7.8,Switch to Bajra/Moong
+Patiala,3,7,5,8,6.3,Continue with rotation
+Jalandhar,3,8,4,8,5.8,Continue with rotation
+Hoshiarpur,2,4,4,8,4.5,Low risk — sustainable farming
+Kapurthala,2,5,4,8,4.8,Low risk — sustainable farming
+Mansa,6,9,8,8,8.6,Switch to Bajra/Moong
+Barnala,5,8,7,8,7.5,Switch to Bajra/Moong
+Tarn Taran,3,6,4,8,5.2,Continue with rotation
+SBS Nagar,3,5,4,8,5.5,Continue with rotation
+Rupnagar,2,4,4,8,4.5,Low risk — sustainable farming
+Shaheed Bhagat Singh Nagar,4,5,4,8,5.7,Continue with rotation
+Pathankot,1,2,4,8,3.8,Low risk — sustainable farming
+Fazilka,6,8,9,8,8.6,Switch to Bajra/Moong
+Gurdaspur,1,2,4,8,3.8,Low risk — sustainable farming
+Sri Muktsar Sahib,5,7,8,8,7.8,Switch to Bajra/Moong
+Fatehgarh Sahib,4,6,4,8,6.0,Continue with rotation

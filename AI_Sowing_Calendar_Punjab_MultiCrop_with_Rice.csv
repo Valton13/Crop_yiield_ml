@@ -1,0 +1,61 @@
+District,Crop,Sowing_Window,Avg_Temp_3D_C,Current_Rain_3D_mm,Advice
+Amritsar,Wheat,Nov 10–30,27.4,25.7,📅 Not ideal month | 🌧️ Rain (25.7mm) | ⏳ Delay sowing
+Amritsar,Rice,Jun 10–25,27.4,25.7,📅 Not ideal month | ⏳ Delay sowing
+Amritsar,Bajra,Jun 15–30,27.4,25.7,📅 Not ideal month | 🌡️ Temp (27.4°C) outside range | ⏳ Delay sowing
+Amritsar,Moong,Jun 10–25,27.4,25.7,📅 Not ideal month | ⏳ Delay sowing
+Bathinda,Wheat,Nov 10–30,27.4,6.9,📅 Not ideal month | ⏳ Delay sowing
+Bathinda,Rice,Jun 10–25,27.4,6.9,📅 Not ideal month | ⏳ Delay sowing
+Bathinda,Bajra,Jun 15–30,27.4,6.9,📅 Not ideal month | 🌡️ Temp (27.4°C) outside range | ⏳ Delay sowing
+Bathinda,Moong,Jun 10–25,27.4,6.9,📅 Not ideal month | ⏳ Delay sowing
+Firozpur,Wheat,Nov 10–30,28.1,34.4,📅 Not ideal month | 🌧️ Rain (34.4mm) | ⏳ Delay sowing
+Firozpur,Rice,Jun 10–25,28.1,34.4,📅 Not ideal month | ⏳ Delay sowing
+Firozpur,Bajra,Jun 15–30,28.1,34.4,📅 Not ideal month | 🌡️ Temp (28.1°C) outside range | ⏳ Delay sowing
+Firozpur,Moong,Jun 10–25,28.1,34.4,📅 Not ideal month | ⏳ Delay sowing
+Ludhiana,Wheat,Nov 10–30,27.5,48.5,📅 Not ideal month | 🌧️ Rain (48.5mm) | ⏳ Delay sowing
+Ludhiana,Rice,Jun 10–25,27.5,48.5,📅 Not ideal month | ⏳ Delay sowing
+Ludhiana,Bajra,Jun 15–30,27.5,48.5,📅 Not ideal month | 🌡️ Temp (27.5°C) outside range | ⏳ Delay sowing
+Ludhiana,Moong,Jun 10–25,27.5,48.5,📅 Not ideal month | ⏳ Delay sowing
+Moga,Wheat,Nov 10–30,27.7,36.7,📅 Not ideal month | 🌧️ Rain (36.7mm) | ⏳ Delay sowing
+Moga,Rice,Jun 10–25,27.7,36.7,📅 Not ideal month | ⏳ Delay sowing
+Moga,Bajra,Jun 15–30,27.7,36.7,📅 Not ideal month | 🌡️ Temp (27.7°C) outside range | ⏳ Delay sowing
+Moga,Moong,Jun 10–25,27.7,36.7,📅 Not ideal month | ⏳ Delay sowing
+Sangrur,Wheat,Nov 10–30,27.7,33.3,📅 Not ideal month | ⚠️ pH 8.2 not ideal | 🌧️ Rain (33.3mm) | ⏳ Delay sowing
+Sangrur,Rice,Jun 10–25,27.7,33.3,📅 Not ideal month | ⚠️ pH 8.2 not ideal | ⏳ Delay sowing
+Sangrur,Bajra,Jun 15–30,27.7,33.3,📅 Not ideal month | 🌡️ Temp (27.7°C) outside range | ⏳ Delay sowing
+Sangrur,Moong,Jun 10–25,27.7,33.3,📅 Not ideal month | ⏳ Delay sowing
+Patiala,Wheat,Nov 10–30,27.8,24.9,📅 Not ideal month | 🌧️ Rain (24.9mm) | ⏳ Delay sowing
+Patiala,Rice,Jun 10–25,27.8,24.9,📅 Not ideal month | ⏳ Delay sowing
+Patiala,Bajra,Jun 15–30,27.8,24.9,📅 Not ideal month | 🌡️ Temp (27.8°C) outside range | ⏳ Delay sowing
+Patiala,Moong,Jun 10–25,27.8,24.9,📅 Not ideal month | ⏳ Delay sowing
+Jalandhar,Wheat,Nov 10–30,27.6,58.7,📅 Not ideal month | 🌧️ Rain (58.7mm) | ⏳ Delay sowing
+Jalandhar,Rice,Jun 10–25,27.6,58.7,📅 Not ideal month | ⏳ Delay sowing
+Jalandhar,Bajra,Jun 15–30,27.6,58.7,📅 Not ideal month | 🌡️ Temp (27.6°C) outside range | ⏳ Delay sowing
+Jalandhar,Moong,Jun 10–25,27.6,58.7,📅 Not ideal month | ⏳ Delay sowing
+Hoshiarpur,Wheat,Nov 10–30,27.3,42.4,📅 Not ideal month | 🌧️ Rain (42.4mm) | ⏳ Delay sowing
+Hoshiarpur,Rice,Jun 10–25,27.3,42.4,📅 Not ideal month | ⏳ Delay sowing
+Hoshiarpur,Bajra,Jun 15–30,27.3,42.4,📅 Not ideal month | ⚠️ pH 6.8 not ideal | 🌡️ Temp (27.3°C) outside range | ⏳ Delay sowing
+Hoshiarpur,Moong,Jun 10–25,27.3,42.4,📅 Not ideal month | ⏳ Delay sowing
+Kapurthala,Wheat,Nov 10–30,27.5,53.9,📅 Not ideal month | 🌧️ Rain (53.9mm) | ⏳ Delay sowing
+Kapurthala,Rice,Jun 10–25,27.5,53.9,📅 Not ideal month | ⏳ Delay sowing
+Kapurthala,Bajra,Jun 15–30,27.5,53.9,📅 Not ideal month | ⚠️ pH 7.4 not ideal | 🌡️ Temp (27.5°C) outside range | ⏳ Delay sowing
+Kapurthala,Moong,Jun 10–25,27.5,53.9,📅 Not ideal month | ⏳ Delay sowing
+Mansa,Wheat,Nov 10–30,28.1,20.4,📅 Not ideal month | ⚠️ pH 8.3 not ideal | 🌧️ Rain (20.4mm) | ⏳ Delay sowing
+Mansa,Rice,Jun 10–25,28.1,20.4,📅 Not ideal month | ⚠️ pH 8.3 not ideal | ⏳ Delay sowing
+Mansa,Bajra,Jun 15–30,28.1,20.4,📅 Not ideal month | 🌡️ Temp (28.1°C) outside range | ⏳ Delay sowing
+Mansa,Moong,Jun 10–25,28.1,20.4,📅 Not ideal month | ⏳ Delay sowing
+Barnala,Wheat,Nov 10–30,27.7,29.0,📅 Not ideal month | ⚠️ pH 8.1 not ideal | 🌧️ Rain (29.0mm) | ⏳ Delay sowing
+Barnala,Rice,Jun 10–25,27.7,29.0,📅 Not ideal month | ⚠️ pH 8.1 not ideal | ⏳ Delay sowing
+Barnala,Bajra,Jun 15–30,27.7,29.0,📅 Not ideal month | 🌡️ Temp (27.7°C) outside range | ⏳ Delay sowing
+Barnala,Moong,Jun 10–25,27.7,29.0,📅 Not ideal month | ⏳ Delay sowing
+Rupnagar,Wheat,Nov 10–30,25.4,33.5,📅 Not ideal month | 🌧️ Rain (33.5mm) | ⏳ Delay sowing
+Rupnagar,Rice,Jun 10–25,25.4,33.5,📅 Not ideal month | ⏳ Delay sowing
+Rupnagar,Bajra,Jun 15–30,25.4,33.5,📅 Not ideal month | 🌡️ Temp (25.4°C) outside range | ⏳ Delay sowing
+Rupnagar,Moong,Jun 10–25,25.4,33.5,📅 Not ideal month | ⏳ Delay sowing
+Fazilka,Wheat,Nov 10–30,29.5,5.5,📅 Not ideal month | ⚠️ pH 8.4 not ideal | ⏳ Delay sowing
+Fazilka,Rice,Jun 10–25,29.5,5.5,📅 Not ideal month | ⚠️ pH 8.4 not ideal | ⏳ Delay sowing
+Fazilka,Bajra,Jun 15–30,29.5,5.5,📅 Not ideal month | 🌡️ Temp (29.5°C) outside range | ⏳ Delay sowing
+Fazilka,Moong,Jun 10–25,29.5,5.5,📅 Not ideal month | ⏳ Delay sowing
+Gurdaspur,Wheat,Nov 10–30,27.0,16.6,📅 Not ideal month | 🌧️ Rain (16.6mm) | ⏳ Delay sowing
+Gurdaspur,Rice,Jun 10–25,27.0,16.6,📅 Not ideal month | ⏳ Delay sowing
+Gurdaspur,Bajra,Jun 15–30,27.0,16.6,📅 Not ideal month | ⚠️ pH 6.7 not ideal | 🌡️ Temp (27.0°C) outside range | ⏳ Delay sowing
+Gurdaspur,Moong,Jun 10–25,27.0,16.6,📅 Not ideal month | ⏳ Delay sowing

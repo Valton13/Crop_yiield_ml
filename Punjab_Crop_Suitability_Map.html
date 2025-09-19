@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2c83683bd1b1572cc3b9c810ddef9284 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+<div style="position: fixed; bottom: 50px; left: 50px; width: 200px; height: auto; 
+background-color: white; border:2px solid grey; z-index:9999; font-size:14px;">
+<b style="font-size:16px">Crop Suitability</b><br>
+<i style="background:yellow;width:12px;height:12px;float:left;margin-top:4px;"></i>&nbsp;Wheat<br><i style="background:green;width:12px;height:12px;float:left;margin-top:4px;"></i>&nbsp;Rice<br><i style="background:orange;width:12px;height:12px;float:left;margin-top:4px;"></i>&nbsp;Bajra<br><i style="background:beige;width:12px;height:12px;float:left;margin-top:4px;"></i>&nbsp;Maize<br><i style="background:lightgreen;width:12px;height:12px;float:left;margin-top:4px;"></i>&nbsp;Moong<br><i style="background:purple;width:12px;height:12px;float:left;margin-top:4px;"></i>&nbsp;Arhar<br><i style="background:darkgreen;width:12px;height:12px;float:left;margin-top:4px;"></i>&nbsp;Sugarcane<br></div>
+    
+            <div class="folium-map" id="map_2c83683bd1b1572cc3b9c810ddef9284" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_2c83683bd1b1572cc3b9c810ddef9284 = L.map(
+                "map_2c83683bd1b1572cc3b9c810ddef9284",
+                {
+                    center: [31.1, 75.3],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 8,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_324b3d52574e3c5b20c37c38276ac5ab = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_324b3d52574e3c5b20c37c38276ac5ab.addTo(map_2c83683bd1b1572cc3b9c810ddef9284);
+        
+    
+            var circle_marker_e3b459c67cae3ebec4e44fbc2598122a = L.circleMarker(
+                [31.63398, 74.87226],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_2c83683bd1b1572cc3b9c810ddef9284);
+        
+    
+        var popup_c14ea7b5058064684a3277bacacb4a6c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b0166dd4bb1cce613b68af75873e8bb0 = $(`<div id="html_b0166dd4bb1cce613b68af75873e8bb0" style="width: 100.0%; height: 100.0%;"><b>Amritsar</b><br>Best Crop: Wheat</div>`)[0];
+                popup_c14ea7b5058064684a3277bacacb4a6c.setContent(html_b0166dd4bb1cce613b68af75873e8bb0);
+            
+        
+
+        circle_marker_e3b459c67cae3ebec4e44fbc2598122a.bindPopup(popup_c14ea7b5058064684a3277bacacb4a6c)
+        ;
+
+        
+    
+    
+            var circle_marker_283857f95cab4db110647cbb4d481ce7 = L.circleMarker(
+                [29.98884, 75.08342],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_2c83683bd1b1572cc3b9c810ddef9284);
+        
+    
+        var popup_e3c647815786fe98ab0c34e94a3e96e5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b17c3a165c125d51b7b8e4e1aa1c69d1 = $(`<div id="html_b17c3a165c125d51b7b8e4e1aa1c69d1" style="width: 100.0%; height: 100.0%;"><b>Bathinda</b><br>Best Crop: Bajra</div>`)[0];
+                popup_e3c647815786fe98ab0c34e94a3e96e5.setContent(html_b17c3a165c125d51b7b8e4e1aa1c69d1);
+            
+        
+
+        circle_marker_283857f95cab4db110647cbb4d481ce7.bindPopup(popup_e3c647815786fe98ab0c34e94a3e96e5)
+        ;
+
+        
+    
+    
+            var circle_marker_6883e636141a77815d9517fb879aa5ce = L.circleMarker(
+                [30.9509, 74.6119],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_2c83683bd1b1572cc3b9c810ddef9284);
+        
+    
+        var popup_0248fd7c391176b1efe2816ce9f9d570 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e2614b2a8cf4a21d76d721c0145c8696 = $(`<div id="html_e2614b2a8cf4a21d76d721c0145c8696" style="width: 100.0%; height: 100.0%;"><b>Firozpur</b><br>Best Crop: Wheat</div>`)[0];
+                popup_0248fd7c391176b1efe2816ce9f9d570.setContent(html_e2614b2a8cf4a21d76d721c0145c8696);
+            
+        
+
+        circle_marker_6883e636141a77815d9517fb879aa5ce.bindPopup(popup_0248fd7c391176b1efe2816ce9f9d570)
+        ;
+
+        
+    
+    
+            var circle_marker_d662dd009072e6766f47ecbbeabe1ea1 = L.circleMarker(
+                [30.6667, 74.8],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_2c83683bd1b1572cc3b9c810ddef9284);
+        
+    
+        var popup_08c63375ad387a255a83cb40e4c3b11e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_174c34796e7bc763d6f7d52bed776f2a = $(`<div id="html_174c34796e7bc763d6f7d52bed776f2a" style="width: 100.0%; height: 100.0%;"><b>Faridkot</b><br>Best Crop: Bajra</div>`)[0];
+                popup_08c63375ad387a255a83cb40e4c3b11e.setContent(html_174c34796e7bc763d6f7d52bed776f2a);
+            
+        
+
+        circle_marker_d662dd009072e6766f47ecbbeabe1ea1.bindPopup(popup_08c63375ad387a255a83cb40e4c3b11e)
+        ;
+
+        
+    
+    
+            var circle_marker_9e10ccd524253e4431f418f6a6b01b81 = L.circleMarker(
+                [30.901, 75.8573],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_2c83683bd1b1572cc3b9c810ddef9284);
+        
+    
+        var popup_0a3afee34f969b18fe67a9cfd52b6e6b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_77078f3a81e96d6964b19e13a41f0a13 = $(`<div id="html_77078f3a81e96d6964b19e13a41f0a13" style="width: 100.0%; height: 100.0%;"><b>Ludhiana</b><br>Best Crop: Wheat</div>`)[0];
+                popup_0a3afee34f969b18fe67a9cfd52b6e6b.setContent(html_77078f3a81e96d6964b19e13a41f0a13);
+            
+        
+
+        circle_marker_9e10ccd524253e4431f418f6a6b01b81.bindPopup(popup_0a3afee34f969b18fe67a9cfd52b6e6b)
+        ;
+
+        
+    
+    
+            var circle_marker_c60662038058a808961bb4b7eea8a0f3 = L.circleMarker(
+                [30.8833, 75.3833],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_2c83683bd1b1572cc3b9c810ddef9284);
+        
+    
+        var popup_391ec206c45ac38f4fb4a189166e0809 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e46d871c022acb91c8baf94b4cf0356a = $(`<div id="html_e46d871c022acb91c8baf94b4cf0356a" style="width: 100.0%; height: 100.0%;"><b>Moga</b><br>Best Crop: Wheat</div>`)[0];
+                popup_391ec206c45ac38f4fb4a189166e0809.setContent(html_e46d871c022acb91c8baf94b4cf0356a);
+            
+        
+
+        circle_marker_c60662038058a808961bb4b7eea8a0f3.bindPopup(popup_391ec206c45ac38f4fb4a189166e0809)
+        ;
+
+        
+    
+    
+            var circle_marker_227228ad2ebe16cd4e443d9efeff8c9b = L.circleMarker(
+                [30.5667, 75.6667],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_2c83683bd1b1572cc3b9c810ddef9284);
+        
+    
+        var popup_56a2b047ea652fd0b3c54e42bcf3e9d9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_779a5ecf692cfa1ec06f93005049d304 = $(`<div id="html_779a5ecf692cfa1ec06f93005049d304" style="width: 100.0%; height: 100.0%;"><b>Sangrur</b><br>Best Crop: Bajra</div>`)[0];
+                popup_56a2b047ea652fd0b3c54e42bcf3e9d9.setContent(html_779a5ecf692cfa1ec06f93005049d304);
+            
+        
+
+        circle_marker_227228ad2ebe16cd4e443d9efeff8c9b.bindPopup(popup_56a2b047ea652fd0b3c54e42bcf3e9d9)
+        ;
+
+        
+    
+    
+            var circle_marker_bb0fa95d703aa131a3be78e0586a14e9 = L.circleMarker(
+                [30.3398, 76.3869],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_2c83683bd1b1572cc3b9c810ddef9284);
+        
+    
+        var popup_723ecc222bfbfb5e0ef8c754e569adf6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cfae056ae5392419b6cf2cfd906d3264 = $(`<div id="html_cfae056ae5392419b6cf2cfd906d3264" style="width: 100.0%; height: 100.0%;"><b>Patiala</b><br>Best Crop: Bajra</div>`)[0];
+                popup_723ecc222bfbfb5e0ef8c754e569adf6.setContent(html_cfae056ae5392419b6cf2cfd906d3264);
+            
+        
+
+        circle_marker_bb0fa95d703aa131a3be78e0586a14e9.bindPopup(popup_723ecc222bfbfb5e0ef8c754e569adf6)
+        ;
+
+        
+    
+    
+            var circle_marker_a2b0579f510bb78cb127fb3963674429 = L.circleMarker(
+                [31.326, 75.576],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_2c83683bd1b1572cc3b9c810ddef9284);
+        
+    
+        var popup_ab121a234644cc890aaae397b1690cbf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_01bd58069bb6d38da92066ae46c3bea2 = $(`<div id="html_01bd58069bb6d38da92066ae46c3bea2" style="width: 100.0%; height: 100.0%;"><b>Jalandhar</b><br>Best Crop: Wheat</div>`)[0];
+                popup_ab121a234644cc890aaae397b1690cbf.setContent(html_01bd58069bb6d38da92066ae46c3bea2);
+            
+        
+
+        circle_marker_a2b0579f510bb78cb127fb3963674429.bindPopup(popup_ab121a234644cc890aaae397b1690cbf)
+        ;
+
+        
+    
+    
+            var circle_marker_e609a51d411f9041cc825e7809cf6480 = L.circleMarker(
+                [31.1048, 75.9058],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_2c83683bd1b1572cc3b9c810ddef9284);
+        
+    
+        var popup_084d06ccfcae2aac8a55b1d50ad21506 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c20592bf7139913c7cc23aab6955b920 = $(`<div id="html_c20592bf7139913c7cc23aab6955b920" style="width: 100.0%; height: 100.0%;"><b>Hoshiarpur</b><br>Best Crop: Wheat</div>`)[0];
+                popup_084d06ccfcae2aac8a55b1d50ad21506.setContent(html_c20592bf7139913c7cc23aab6955b920);
+            
+        
+
+        circle_marker_e609a51d411f9041cc825e7809cf6480.bindPopup(popup_084d06ccfcae2aac8a55b1d50ad21506)
+        ;
+
+        
+    
+    
+            var circle_marker_b0d03c5da0fa6d035d8c4411affe8b0c = L.circleMarker(
+                [31.0833, 75.4167],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_2c83683bd1b1572cc3b9c810ddef9284);
+        
+    
+        var popup_462e42d06ee27dc7fe9789747bf1d9c4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_19ac97154a43af79a12291d9736b4533 = $(`<div id="html_19ac97154a43af79a12291d9736b4533" style="width: 100.0%; height: 100.0%;"><b>Kapurthala</b><br>Best Crop: Wheat</div>`)[0];
+                popup_462e42d06ee27dc7fe9789747bf1d9c4.setContent(html_19ac97154a43af79a12291d9736b4533);
+            
+        
+
+        circle_marker_b0d03c5da0fa6d035d8c4411affe8b0c.bindPopup(popup_462e42d06ee27dc7fe9789747bf1d9c4)
+        ;
+
+        
+    
+    
+            var circle_marker_10d5dadec0016a4ba06a416ff7be01c5 = L.circleMarker(
+                [29.8167, 75.3333],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_2c83683bd1b1572cc3b9c810ddef9284);
+        
+    
+        var popup_706ec13586eb6377daba7ed8db35c864 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_77bcb6a829103dbadb3764699ab986fd = $(`<div id="html_77bcb6a829103dbadb3764699ab986fd" style="width: 100.0%; height: 100.0%;"><b>Mansa</b><br>Best Crop: Bajra</div>`)[0];
+                popup_706ec13586eb6377daba7ed8db35c864.setContent(html_77bcb6a829103dbadb3764699ab986fd);
+            
+        
+
+        circle_marker_10d5dadec0016a4ba06a416ff7be01c5.bindPopup(popup_706ec13586eb6377daba7ed8db35c864)
+        ;
+
+        
+    
+    
+            var circle_marker_44e2fbf9e0a135c00713574e7832f22c = L.circleMarker(
+                [29.95, 75.4167],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_2c83683bd1b1572cc3b9c810ddef9284);
+        
+    
+        var popup_cf05d5ce5d19205910485ac7b2a04533 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_caa0a4bd182d7623035c67b619d10ae1 = $(`<div id="html_caa0a4bd182d7623035c67b619d10ae1" style="width: 100.0%; height: 100.0%;"><b>Barnala</b><br>Best Crop: Bajra</div>`)[0];
+                popup_cf05d5ce5d19205910485ac7b2a04533.setContent(html_caa0a4bd182d7623035c67b619d10ae1);
+            
+        
+
+        circle_marker_44e2fbf9e0a135c00713574e7832f22c.bindPopup(popup_cf05d5ce5d19205910485ac7b2a04533)
+        ;
+
+        
+    
+    
+            var circle_marker_9934d294648dcc47a0c2bd2fba69e70f = L.circleMarker(
+                [31.35, 74.9333],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_2c83683bd1b1572cc3b9c810ddef9284);
+        
+    
+        var popup_fb94c3adc0a525b6a8e13b1baa513641 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8d236c55bd759812c5d41b45efa7b04e = $(`<div id="html_8d236c55bd759812c5d41b45efa7b04e" style="width: 100.0%; height: 100.0%;"><b>Tarn Taran</b><br>Best Crop: Wheat</div>`)[0];
+                popup_fb94c3adc0a525b6a8e13b1baa513641.setContent(html_8d236c55bd759812c5d41b45efa7b04e);
+            
+        
+
+        circle_marker_9934d294648dcc47a0c2bd2fba69e70f.bindPopup(popup_fb94c3adc0a525b6a8e13b1baa513641)
+        ;
+
+        
+    
+    
+            var circle_marker_8d954e045c2f61c776f6638afbec5b51 = L.circleMarker(
+                [30.7167, 76.0],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_2c83683bd1b1572cc3b9c810ddef9284);
+        
+    
+        var popup_eab1efac49d6dc9cb4b1d75e397be031 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a2d6c6751d2279e8104f88f730b40ed0 = $(`<div id="html_a2d6c6751d2279e8104f88f730b40ed0" style="width: 100.0%; height: 100.0%;"><b>SBS Nagar</b><br>Best Crop: Wheat</div>`)[0];
+                popup_eab1efac49d6dc9cb4b1d75e397be031.setContent(html_a2d6c6751d2279e8104f88f730b40ed0);
+            
+        
+
+        circle_marker_8d954e045c2f61c776f6638afbec5b51.bindPopup(popup_eab1efac49d6dc9cb4b1d75e397be031)
+        ;
+
+        
+    
+    
+            var circle_marker_ce1cbf3fbe54ac5abcef8aa9ae0076b4 = L.circleMarker(
+                [30.95, 76.5333],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_2c83683bd1b1572cc3b9c810ddef9284);
+        
+    
+        var popup_83c16cd6155ba25d797919f4dc191e75 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_06ced51b2505abacaa9d13043191fdca = $(`<div id="html_06ced51b2505abacaa9d13043191fdca" style="width: 100.0%; height: 100.0%;"><b>Rupnagar</b><br>Best Crop: Wheat</div>`)[0];
+                popup_83c16cd6155ba25d797919f4dc191e75.setContent(html_06ced51b2505abacaa9d13043191fdca);
+            
+        
+
+        circle_marker_ce1cbf3fbe54ac5abcef8aa9ae0076b4.bindPopup(popup_83c16cd6155ba25d797919f4dc191e75)
+        ;
+
+        
+    
+    
+            var circle_marker_e927c0d54ba86e0999bdf1ead26f4ca0 = L.circleMarker(
+                [32.2667, 75.6333],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_2c83683bd1b1572cc3b9c810ddef9284);
+        
+    
+        var popup_7700e4902f35c3f2e86e2da64514018b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cc4991ba76ac832104d3135f0327818b = $(`<div id="html_cc4991ba76ac832104d3135f0327818b" style="width: 100.0%; height: 100.0%;"><b>Pathankot</b><br>Best Crop: Wheat</div>`)[0];
+                popup_7700e4902f35c3f2e86e2da64514018b.setContent(html_cc4991ba76ac832104d3135f0327818b);
+            
+        
+
+        circle_marker_e927c0d54ba86e0999bdf1ead26f4ca0.bindPopup(popup_7700e4902f35c3f2e86e2da64514018b)
+        ;
+
+        
+    
+    
+            var circle_marker_b378dcf5ddd1b1cba7f08282656ba1f5 = L.circleMarker(
+                [32.0333, 75.2167],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_2c83683bd1b1572cc3b9c810ddef9284);
+        
+    
+        var popup_cd8ceed16f89557f4ab9668d6cae7f87 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e9ae6179755410334eef2b9b30007493 = $(`<div id="html_e9ae6179755410334eef2b9b30007493" style="width: 100.0%; height: 100.0%;"><b>Gurdaspur</b><br>Best Crop: Wheat</div>`)[0];
+                popup_cd8ceed16f89557f4ab9668d6cae7f87.setContent(html_e9ae6179755410334eef2b9b30007493);
+            
+        
+
+        circle_marker_b378dcf5ddd1b1cba7f08282656ba1f5.bindPopup(popup_cd8ceed16f89557f4ab9668d6cae7f87)
+        ;
+
+        
+    
+    
+            var circle_marker_490c6c8c009a398761e860033f809b40 = L.circleMarker(
+                [29.6833, 74.6],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_2c83683bd1b1572cc3b9c810ddef9284);
+        
+    
+        var popup_f83a0891c5331b1389353d5b58cedf9e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cb8b396ad49d6f0ae82a56e0e058420c = $(`<div id="html_cb8b396ad49d6f0ae82a56e0e058420c" style="width: 100.0%; height: 100.0%;"><b>Fazilka</b><br>Best Crop: Bajra</div>`)[0];
+                popup_f83a0891c5331b1389353d5b58cedf9e.setContent(html_cb8b396ad49d6f0ae82a56e0e058420c);
+            
+        
+
+        circle_marker_490c6c8c009a398761e860033f809b40.bindPopup(popup_f83a0891c5331b1389353d5b58cedf9e)
+        ;
+
+        
+    
+    
+            var circle_marker_4f39adabe7996f37ca4860bb6a9ed45f = L.circleMarker(
+                [30.1, 74.5333],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_2c83683bd1b1572cc3b9c810ddef9284);
+        
+    
+        var popup_4948afa07c1584f27b68bec71de0ca24 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6c52cbd415ac93f162be37b117c25d24 = $(`<div id="html_6c52cbd415ac93f162be37b117c25d24" style="width: 100.0%; height: 100.0%;"><b>Sri Muktsar Sahib</b><br>Best Crop: Bajra</div>`)[0];
+                popup_4948afa07c1584f27b68bec71de0ca24.setContent(html_6c52cbd415ac93f162be37b117c25d24);
+            
+        
+
+        circle_marker_4f39adabe7996f37ca4860bb6a9ed45f.bindPopup(popup_4948afa07c1584f27b68bec71de0ca24)
+        ;
+
+        
+    
+    
+            var circle_marker_53e5ba007f685d48c7fed11b19c185ae = L.circleMarker(
+                [30.4333, 76.15],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_2c83683bd1b1572cc3b9c810ddef9284);
+        
+    
+        var popup_bf76ce268af11f2f6e6e1070740f6fda = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_71924587b4aa918ee6d95ac02eb3927b = $(`<div id="html_71924587b4aa918ee6d95ac02eb3927b" style="width: 100.0%; height: 100.0%;"><b>Fatehgarh Sahib</b><br>Best Crop: Wheat</div>`)[0];
+                popup_bf76ce268af11f2f6e6e1070740f6fda.setContent(html_71924587b4aa918ee6d95ac02eb3927b);
+            
+        
+
+        circle_marker_53e5ba007f685d48c7fed11b19c185ae.bindPopup(popup_bf76ce268af11f2f6e6e1070740f6fda)
+        ;
+
+        
+    
+</script>
+</html>

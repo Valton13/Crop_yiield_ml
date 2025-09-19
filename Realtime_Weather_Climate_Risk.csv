@@ -1,0 +1,15 @@
+District,City,Current_Temp_C,Current_Rain_24h_mm,Humidity_%,Rain_Alert,Climate_Risk_Score,Recommendation
+Amritsar,Amritsar,28.3,0.0,89,✅ Rainfall normal,3.6,Monitor weather
+Firozpur,Firozpur,29.0,0.0,79,✅ Rainfall normal,3.5,Monitor weather
+Ludhiana,Ludhiana,25.1,0.0,92,✅ Rainfall normal,3.5,Monitor weather
+Moga,Moga,26.3,0.0,84,✅ Rainfall normal,3.5,Monitor weather
+Sangrur,Sangrur,25.6,0.02,92,✅ Rainfall normal,3.6,Monitor weather
+Patiala,Patiala,26.5,0.0,88,✅ Rainfall normal,3.6,Monitor weather
+Jalandhar,Jalandhar,25.3,0.0,90,✅ Rainfall normal,3.5,Monitor weather
+Hoshiarpur,Hoshiarpur,25.3,0.0,81,✅ Rainfall normal,3.5,Monitor weather
+Kapurthala,Kapurthala,28.3,0.0,89,✅ Rainfall normal,3.5,Monitor weather
+Mansa,Mansa,26.1,0.01,91,✅ Rainfall normal,4.8,Monitor weather
+Barnala,Barnala,25.3,0.0,94,✅ Rainfall normal,3.6,Monitor weather
+Rupnagar,Rupnagar,23.6,0.0,86,✅ Rainfall normal,3.5,Monitor weather
+Fazilka,Fazilka,26.4,0.0,83,✅ Rainfall normal,4.5,Monitor weather
+Gurdaspur,Gurdaspur,25.1,0.0,83,✅ Rainfall normal,3.5,Monitor weather

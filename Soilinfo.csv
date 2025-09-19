@@ -1,0 +1,23 @@
+District,Soil_Type,pH,EC_dS_m,Organic_Carbon_pct,Nitrogen_kg_ha,Phosphorus_kg_ha,Potassium_kg_ha,Zinc_ppm,Iron_ppm,Manganese_ppm,Copper_ppm,Texture
+Amritsar,Sandy Loam,7.8,0.8,0.45,240,18,180,0.8,4.2,2.1,0.8,Loamy
+Bathinda,Loamy,8.0,0.9,0.40,220,15,160,0.6,3.8,1.9,0.7,Clay Loam
+Firozpur,Sandy Loam,7.6,0.7,0.50,260,22,200,0.9,4.0,2.0,0.8,Sandy Loam
+Faridkot,Loamy,8.1,1.0,0.35,200,12,140,0.5,3.5,1.8,0.6,Clay Loam
+Ludhiana,Loamy,7.9,0.8,0.55,280,25,220,1.0,4.5,2.3,0.9,Loam
+Moga,Loamy,7.7,0.7,0.60,300,30,250,1.1,4.8,2.4,1.0,Clay Loam
+Sangrur,Loamy,8.2,1.1,0.30,180,10,120,0.4,3.2,1.7,0.5,Clay Loam
+Patiala,Loamy,8.0,0.9,0.40,230,14,150,0.7,4.0,2.0,0.7,Loam
+Jalandhar,Clay Loam,7.5,0.6,0.65,320,35,280,1.2,5.0,2.5,1.1,Clay Loam
+Hoshiarpur,Sandy Loam,6.8,0.5,0.70,350,40,300,1.5,6.0,3.0,1.3,Sandy Loam
+Kapurthala,Clay Loam,7.4,0.6,0.75,360,45,320,1.6,6.2,3.1,1.4,Clay Loam
+Mansa,Loamy,8.3,1.2,0.25,160,8,100,0.3,2.8,1.5,0.4,Clay Loam
+Barnala,Loamy,8.1,1.0,0.38,210,13,130,0.6,3.6,1.8,0.6,Clay Loam
+Tarn_Taran,Sandy Loam,7.7,0.7,0.52,270,24,210,0.9,4.1,2.1,0.8,Sandy Loam
+SBS_Nagar,Loamy,7.8,0.8,0.48,250,20,190,0.8,4.3,2.2,0.8,Loam
+Rupnagar,Loam,7.6,0.6,0.58,310,32,260,1.1,5.2,2.6,1.0,Loam
+Shaheed_Bhagat_Singh_Nagar,SBS_Nagar,7.8,0.8,0.48,250,20,190,0.8,4.3,2.2,0.8,Loam
+Pathankot,Sandy Loam,6.5,0.4,0.80,380,50,350,1.8,7.0,3.5,1.5,Sandy Loam
+Fazilka,Sandy Loam,8.4,1.3,0.20,140,6,80,0.2,2.5,1.4,0.3,Sandy Loam
+Gurdaspur,Sandy Loam,6.7,0.5,0.78,370,48,340,1.7,6.8,3.4,1.4,Sandy Loam
+Sri_Muktsar_Sahib,Loamy,8.2,1.1,0.32,190,11,130,0.5,3.4,1.7,0.5,Clay Loam
+Fatehgarh_Sahib,Loamy,7.9,0.8,0.42,240,16,170,0.8,4.2,2.1,0.8,Loam
