@@ -47,13 +47,16 @@ districts = soil_df['District'].tolist()
 
 # --- Tab Setup ---
 # --- Tab Setup (7 tabs) ---
-tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8, tab9 = st.tabs([
+tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8, tab9, tab10 , tab11 = st.tabs([
     "🏠 Home", "📈 Yield Prediction",
     "💰 MSP Forecast", "🌱 Fertilizer Advice",
     "⚠️ Zinc Alert", "🔄 Crop Rotation",
     "🎯 Best Crop Recommendation",
     "📅 Weather Forecast",
-    "📅 Sowing Calendar"  # ← New tab
+    "📆 Sowing Calendar",
+    "🩺 Crop Diseases" ,
+    "🌱 Image Diseases Detection " ,
+     # ← New tab
 ])
 # =================== TAB 1: Crop Suitability ===================
 with tab1:
@@ -727,3 +730,190 @@ with tab9:
 
     except Exception as e:
         st.error(f"Error: {e}")        
+
+
+# =================== TAB 10: Crop Diseases (Generic & Yield-Impacting) ===================
+with tab10:
+    st.header("🩺 Common Crop Diseases in Punjab")
+
+    st.markdown("""
+    These are **major yield-reducing diseases** affecting multiple crops in Punjab.  
+    Early identification and management can save up to **30–50% yield loss**.
+    """)
+
+    # --- Disease Database (Generic, Multi-Crop) ---
+    diseases = [
+        {
+            "Disease": "Rust (Leaf/Stripe Rust)",
+            "Crops": "Wheat, Barley, Oats",
+            "Cause": "Fungus (*Puccinia spp.*)",
+            "Symptoms": "Yellow-orange pustules on leaves; reduces photosynthesis",
+            "Impact": "Up to 40% yield loss if untreated",
+            "Treatment": "**Spray:** Tebuconazole or Propiconazole (50 ml/15L water)\n**When:** At first sign of infection\n**Repeat:** After 10 days",
+            "Prevention": "Use resistant varieties (e.g., PBW-509), avoid late sowing"
+        },
+        {
+            "Disease": "Blast Disease",
+            "Crops": "Rice, Wheat, Millets",
+            "Cause": "Fungus (*Magnaporthe oryzae*)",
+            "Symptoms": "Diamond-shaped gray lesions with yellow halo; neck rot in rice",
+            "Impact": "Can destroy entire crop in 7–10 days under humid conditions",
+            "Treatment": "**Spray:** Tricyclazole (4g/L) or Carbendazim\n**Drain field** if over-flooded",
+            "Prevention": "Avoid excess nitrogen; rotate with non-host crops"
+        },
+        {
+            "Disease": "Sheath Blight",
+            "Crops": "Rice, Maize",
+            "Cause": "Fungus (*Rhizoctonia solani*)",
+            "Symptoms": "Water-soaked oval lesions on sheaths near water level",
+            "Impact": "20–30% yield reduction in dense fields",
+            "Treatment": "**Spray:** Validamycin or Hexaconazole\n**Improve spacing** to reduce humidity",
+            "Prevention": "Avoid overcrowding; manage water levels"
+        },
+        {
+            "Disease": "Fusarium Wilt / Root Rot",
+            "Crops": "Moong, Arhar, Chickpea, Cotton",
+            "Cause": "Soil-borne fungus (*Fusarium oxysporum*)",
+            "Symptoms": "Yellowing, wilting, brown roots; plant dies slowly",
+            "Impact": "Up to 60% loss in susceptible varieties",
+            "Treatment": "**Seed Treatment:** Trichoderma viride (4g/kg seed)\n**Soil Application:** Neem cake or Pseudomonas",
+            "Prevention": "Avoid continuous legume cropping; improve drainage"
+        },
+        {
+            "Disease": "Powdery Mildew",
+            "Crops": "Wheat, Peas, Sunflower",
+            "Cause": "Fungus (*Erysiphe graminis*)",
+            "Symptoms": "White powdery growth on lower leaves",
+            "Impact": "Reduces grain filling and quality",
+            "Treatment": "**Spray:** Diniconazole (10 ml/15L water)\n**Remove infected debris**",
+            "Prevention": "Ensure good airflow; avoid dense planting"
+        },
+        {
+            "Disease": "Bacterial Leaf Blight (BLB)",
+            "Crops": "Rice, Sugarcane",
+            "Cause": "Bacteria (*Xanthomonas oryzae*)",
+            "Symptoms": "Wavy yellow margins on lesions; oozing in wet weather",
+            "Impact": "Severe in nursery stages; spreads fast during storms",
+            "Treatment": "**Spray:** Copper Oxychloride (3g/L) or Streptocycline (1g/10L)\n**Control leaf folder insects**",
+            "Prevention": "Use disease-free seeds; drain field after rain"
+        }
+    ]
+
+    # --- Display Diseases ---
+    for idx, disease in enumerate(diseases):
+        with st.expander(f"🔍 {disease['Disease']} – Affects: {disease['Crops']}"):
+            col1, col2 = st.columns([2, 1])
+            with col1:
+                st.write(f"**Cause:** {disease['Cause']}")
+                st.write(f"**Symptoms:** {disease['Symptoms']}")
+                st.write(f"**Yield Impact:** {disease['Impact']}")
+                st.markdown(f"**Treatment:**\n{disease['Treatment'].replace('**', '').replace('\n', '  \n')}")
+                st.markdown(f"**Prevention:** {disease['Prevention']}")
+
+            with col2:
+                # Optional: Add a generic safe image link
+                image_urls = {
+                    "Rust": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Wheat_leaf_with_stripe_rust.jpg/800px-Wheat_leaf_with_stripe_rust.jpg",
+                    "Blast": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Rice_blast_symptoms_on_leaves.jpg/800px-Rice_blast_symptoms_on_leaves.jpg",
+                    "Sheath Blight": "https://www.plantvillage.com/media/images/2023/05/sheath_blightrice_field.jpg",
+                    "Fusarium": "https://www.researchgate.net/publication/339767792/figure/fig1/AS:869396205060096@1584376536500/Karnal-bunt-symptoms-in-wheat-kernels.jpg",
+                    "Mildew": "https://plantvillage.psu.edu/media/images/2023/05/powdery_mildew_wheat_leaves.jpg",
+                    "BLB": "https://plantvillage.psu.edu/media/images/2023/05/bacterial_leaf_blighthrice_plant.jpg"
+                }
+                key = disease['Disease'].split()[0]
+                img_url = image_urls.get(key, None)
+                if img_url:
+                    try:
+                        st.image(img_url, caption=disease['Disease'], width=150)
+                    except:
+                        st.caption("📷 Image not available")
+                else:
+                    st.markdown("<br>"*5 + "📷 *Visual reference coming soon*", unsafe_allow_html=True)
+
+        st.markdown("---")
+
+    # --- General Advice ---
+    st.subheader("✅ Best Practices to Prevent Crop Diseases")
+    st.markdown("""
+    - 🔄 **Crop Rotation**: Avoid growing same family crops back-to-back (e.g., don’t follow Wheat with Rice)
+    - 🧪 **Soil Testing**: Correct pH and nutrient imbalance (especially Zinc deficiency → increases disease risk)
+    - 🌱 **Seed Treatment**: Use Trichoderma or Carbofuran before sowing
+    - 💧 **Water Management**: Avoid stagnation; use alternate wetting & drying in rice
+    - 🚜 **Field Sanitation**: Remove crop residue and weeds that harbor pathogens
+    - 🛡️ **Resistant Varieties**: Use PAU-recommended seeds like PBW-509 (wheat), PR126 (rice)
+    """)
+
+    # --- Link to PlantVillage ---
+    st.markdown("### 🔗 Learn More")
+    st.link_button("Go to PlantVillage for Detailed Crop Disease Guide", "https://plantvillage.psu.edu/topics")     
+
+# =================== TAB 11: AI Disease Detector ===================
+with tab11:
+    st.header("📷 AI-Powered Wheat Disease Detection")
+    st.write("""
+    Upload a wheat leaf image to detect **Rust** or **Healthy** status.
+    The model was trained on your local dataset (`dataset/healthy`, `dataset/rust`).
+    """)
+
+    # --- Load Model (Only Once) ---
+    @st.cache_resource
+    def load_model():
+        try:
+            from tensorflow.keras.models import load_model
+            model = load_model('model/wheat_disease_model.h5')
+            st.success("✅ AI Model loaded successfully!")
+            return model
+        except Exception as e:
+            st.error(f"❌ Could not load model: {e}")
+            st.info("💡 Run `train_model.py` first to train and save the model.")
+            return None
+
+    model = load_model()
+    if model is None:
+        st.stop()
+
+    # --- Class Names ---
+    class_names = ['healthy', 'rust']  # Must match your training labels
+
+    # --- Image Upload ---
+    uploaded_file = st.file_uploader("📤 Upload a wheat leaf image (JPG/PNG)", type=["jpg", "jpeg", "png"])
+
+    if uploaded_file is not None:
+        from PIL import Image
+        import numpy as np
+
+        # Display uploaded image
+        image = Image.open(uploaded_file)
+        st.image(image, caption="Uploaded Leaf", width=300)
+
+        # Preprocess image
+        img = image.resize((150, 150))  # Match model input size
+        img_array = np.array(img) / 255.0  # Normalize pixel values
+        img_array = np.expand_dims(img_array, axis=0)  # Add batch dimension
+
+        # Predict
+        with st.spinner("Analyzing..."):
+            predictions = model.predict(img_array)
+            predicted_class = class_names[int(predictions[0][0] > 0.5)]
+            confidence = predictions[0][0] if predicted_class == 'rust' else 1 - predictions[0][0]
+
+        st.subheader("🔍 Diagnosis Result")
+
+        if confidence > 0.7:
+            if predicted_class == 'rust':
+                st.warning(f"⚠️ Detected: **{predicted_class.title()}** (Confidence: {confidence:.1%})")
+                st.markdown("""
+                ### 💊 Recommended Treatment:
+                - Spray **Tebuconazole (50 ml per 15L water)**  
+                - Repeat after 10 days  
+                - Avoid excess nitrogen fertilization  
+                - Practice crop rotation with Bajra/Moong
+                """)
+            else:
+                st.success(f"✅ Status: **{predicted_class.title()}** (Confidence: {confidence:.1%})")
+                st.markdown("Crop is healthy — no action needed.")
+        else:
+            st.info("🟡 Result uncertain — upload a clearer, well-lit image")
+
+        # Link to more info
+        st.markdown("[🔗 Learn more about Wheat Rust](https://plantvillage.psu.edu/topics/wheat/infos)")        
